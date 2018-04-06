@@ -147,8 +147,14 @@ header{
     text-align: justify;
 }
 
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+}
+
 .skill-icons {
-    margin-top: 3rem;
+    margin-top: 2rem;
+    width: 100%;
 }
 
 i {
