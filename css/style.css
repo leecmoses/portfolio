@@ -11,7 +11,6 @@ html, body {
     width: 100%;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #ffffff;
-    font-size: 1rem;
 }
 
 body {
@@ -19,20 +18,23 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 180%;
 }
 
 .links a {
     font-size: .7rem;
-    margin: .2rem;
+    font-weight: 600;
+    margin: .2rem auto;
     text-transform: uppercase;
-    font-weight: bolder;
     text-decoration: none;
     color: #000000;
 }
 
 .links a:hover {
     color: #ffd700;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 
 #moses {
@@ -49,7 +51,8 @@ body {
 }
 
 #about h2 {
-    font-size: 2rem;
+    font-size: 210%;
+    font-weight: 300;
     text-align: center;
     margin-bottom: 0.2rem;
     text-transform: uppercase;
@@ -58,7 +61,7 @@ body {
 
 #about h3 {
     color: #ffd700;
-    font-size: .85rem;
+    font-size: 94%;
     font-weight: 400;
     text-align: center;
     margin: 0;
@@ -71,6 +74,11 @@ body {
     text-align: center;
     margin: auto;
     padding: 3.5rem 0 1.5rem;
+}
+
+h2 {
+    font-size: 180%;
+    font-weight: 400;
 }
 
 #projects {
@@ -126,7 +134,7 @@ header{
     display: block;
     border: .25rem solid #ffffff;
     border-radius: 100%;
-    width: 13rem;
+    width: 14rem;
     transform: translateY(40%);
 }
 
@@ -136,7 +144,7 @@ header{
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    min-height: 18rem;
+    min-height: 18.5rem;
     background-image: url("../img/desktop.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -204,14 +212,14 @@ i:hover {
     transition-duration: .5s;
 }
 
-@media only screen and (min-width: 53rem) {
+@media only screen and (min-width: 55rem) {
     .wallpaper {
         align-items: flex-end;
         padding-right: 12rem;
     
     }
     #about {
-        padding: 5rem 12rem 1.5rem 12rem;
+        padding: 3rem 13rem;
         text-align: left;
     }
     
@@ -224,17 +232,22 @@ i:hover {
     }
 
     .profile {
-        transform: translateY(60%);
-        width: 16rem;
+        transform: translateY(50%);
+        width: 18rem;
     }
 
     .wallpaper {
-        min-height: 24rem;
+        min-height: 28rem;
     }
 
     .links a {
         font-size: 1rem;
         margin: .5rem;
+    }
+
+    h2 {
+        font-size: 240%;
+        font-weight: 300;
     }
 
     .feature-project-item {
