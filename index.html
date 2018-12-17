@@ -1,111 +1,141 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Moses Lee</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="icon" href="img/tag.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>leecmoses | developer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 <body>
+    <nav id="nav" class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#about">About</a></li>
+            <li class="nav__item"><a href="#projects">Projects</a></li>
+            <li class="nav__item"><a href="#skills">Skills</a></li>
+            <li class="nav__item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     
-    <!-- Navigation bar -->
-    <h1 id="moses">Moses Lee</h1>
-    <header>
-        <div class="links link-left">
-            <a class="scroll" href="#moses">Moses Lee</a>
+    <header class="header">
+        <div class="header__logo-box">
+            <img src="img/logo.png" alt="logo" class="header__logo">
         </div>
-        <div class="links link-right">
-                <a class="scroll" href="#about">About</a>
-                <a class="scroll" href="#featured-project">Projects</a>
-                <a class="scroll" href="#skills">Skills</a>
-                <a class="scroll" href="#contact">Contact</a>
+
+        <div class="header__menu-box btn">
+            <a id="menu" class="header__menu">
+                <i class="fas fa-bars"></i>             
+            </a>
+
+        </div>
+
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Moses Lee</span>
+                <span class="heading-primary--sub">full-stack developer | financier | yogi</span>
+            </h1>
+
+            <div class="header__button-box">
+                <a href="#about" class="btn btn--yellow btn--animated"><i class="fas fa-angle-double-down"></i></a>
+            </div>
         </div>
     </header>
 
-    <!-- Banner -->
-    <div class="wallpaper">
-    <!-- Profile Image -->
-    <img src="img/moses.jpg" class="profile">
-    </div>
-
-    <!-- Main container -->
-    <section class="main-container">
-
-    <!-- About Section -->
-        <div id="about">
-            <h2>Moses Lee</h2>
-            <h3>coder | financier | humanitarian</h3>
-            <p>
-            Moses began his career at Fortress Group, a global fund placement firm representing private equity, venture capital, and growth equity funds. 
-            As an Analyst, he was responsible for assessing the viability of potential GP client fundraises, conducting research on the alternative investment criteria and portfolio objectives of institutional investors, 
-            and drafting marketing and due diligence materials. There he developed exceptional personal responsibility and problem solving, as he worked with a team of analysts, associates, and managing directors.
-            </p>
-            <p>
-            While conducting market research for a growth equity fund manager with a focus on artifical intelligence, he became fascinated by machine learning, blockchain, and cryptography. Moses decided he wanted to learn more 
-            about the technical knowledge and programming involved. He then enrolled in a full immersive coding program, located in the Atlanta Tech Village, the fourth largest tech hub in America. 
-            It has accelerated his learning and building of a strong programming foundation in which he continues to expand upon.
-            </p>
-            <p>
-            Moses revels being at the cross section of technology and finance because of the large impact and positive influence it may have on society. He earned his B.B.A. in Finance and is a Certified Alternative Investment Analyst (CAIA) Charterholder.
-            He resides in Atlanta and enjoys coding, traveling, and yoga.
-            </p>
-        </div>
-        
-    <!-- Featured Project Section -->
-        <div id="featured-project">
-            <h2>Featured Project</h2>
-            <a href="#"><img class="feature-project-item" src="img/coming-soon.jpg" alt="#"></a>
-        </div>
-
-    <!-- Projects Section -->
-        <div id="projects">
-            <h2>Projects</h2>
-            <p>Feedback is alway appreciated. If you have questions or comments about my projects feel free to contact me. My contact information can be found below.</p>
-            <a href="https://leecmoses.github.io/colour-swatches/index.html" target="_blank"><img class="project-items" src="img/colour-swatches.gif" alt="Colour Swatches"></a>
-            <a href="#"><img class="project-items" src="img/instagrammy.gif" alt="Instagrammy"></a>
-            <a href="https://leecmoses.github.io/google-clone/index.html" target="_blank"><img class="project-items" src="img/google-clone.gif" alt="Google Clone"></a>
-            <a href="#"><img class="project-items" src="img/coming-soon.jpg" alt="#"></a>
-        </div>
-
-    <!-- Skills Section -->
-        <div id="skills">
-            <h2>Skills</h2>
-            <p>As a developer, I am continuously honing my skills and adding new tools to my arsenal. Below are technologies that I am familiar with.</p>
-            <div class="skill-icons">
-                <a href="https://www.javascript.com/" alt="JavaScript" target="_blank"><i class="devicon-javascript-plain"><p>JavaScript</p></i></a>
-                <a href="https://www.jQuery.com/" alt="jQuery" target="_blank"><i class="devicon-jquery-plain-wordmark"><p>jQuery</p></i></a>
-                <a href="https://www.nodejs.org/" alt="Node.js" target="_blank"><i class="devicon-nodejs-plain"><p>Node.js</p></i></a>
-                <a href="https://www.expressjs.com/" alt="Express" target="_blank"><i class="devicon-express-original"><p>Express</p></i></a>
-                <a href="https://www.python.org/" alt="Python" target="_blank"><i class="devicon-python-plain"><p>Python</p></i></a>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" alt="HTML5" target="_blank"><i class="devicon-html5-plain"><p>HTML5</p></i></a>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" alt="CSS3" target="_blank"><i class="devicon-css3-plain"><p>CSS3</p></i></a>
-                <a href="https://git-scm.com/" alt="Git" target="_blank"><i class="devicon-git-plain"><p>Git</p></i></a>
-                <a href="https://aws.amazon.com/" alt="AWS" target="_blank"><i class="devicon-amazonwebservices-original"><p>AWS</p></i></a>
-                <a href="https://trello.com/" alt="Trello" target="_blank"><i class="devicon-trello-plain"><p>Trello</p></i></a>
+    <main>
+        <section id="about" class="about-box">
+            <h2 class="section-heading">About</h2>
+            <img src="img/moses.jpg" class="about__profile center">
+            <div class="about__caption">
+                <p>In an infinite loop of learning, improving, evolving, and achieving.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div id="contact">
-            <h2>Contact</h2>
-            <p>Let's get in touch.</p>
-            <div class="contact-icons">
-                <a href="mailto:leecmoses@gmail.com"><img src="img/email.png" alt="email" width="50" height="50"></a>
-                <a href="https://www.linkedin.com/in/leecmoses/" target="_blank"><img src="img/linkedin.png" alt="linkedin" width="50" height="50"></a>
-                <a href="https://github.com/leecmoses" target="_blank"><img src="img/github.png" alt="github" width="50" height="50"></a>
-                <a href="Moses Lee - Resume.pdf" target="_blank"><img src="img/resume.png" alt="resume" width="50" height="50"></a>
-                <a href="mission.html" target="_blank"><img src="img/mission.png" alt="mission" width="50" height="50"></a>
+            <div class="about__description center">
+                <p>Previously an investment analyst and now a full-stack developer specializing in the MERN stack. Moses is a strongly detailed oriented individual with an appreciation for design. He moves fluidly between both halves of the stack, and prioritize continued learning to add greater value to the team.</p>                
             </div>
-            <p class="copyright">© 2018 <span style="color:#000000; font-weight: 500">Moses Lee</span> All rights reserved</p>
-        </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+            <!-- Implement when with media queries, right now doesn't fit on a 320px device -->
+            <!-- <div class="about__button-box">
+                <a href="#projects" class="btn btn--yellow btn--animated"><i class="fas fa-angle-double-down"></i></a>
+            </div> -->
+        </section>
+
+        <section id="projects" class="projects">
+            <h2 class="section-heading">Projects</h2>
+
+            <div class="projects--1">
+                <h3 class="project__title">Colour Swatches</h3>
+                <img class="project-item center" src="img/colour-swatches.gif" alt="Colour Swatches">
+                <div class="projects__button-box">
+                    <a href="https://leecmoses.github.io/colour-swatches/index.html" target="_blank" class="btn btn--project">GitHub</a>
+                </div>  
+            </div>
+
+            <div class="projects--2">
+                <h3 class="project__title">Instagrammy</h3>
+                <img class="project-item center" src="img/instagrammy.gif" alt="Instagrammy">
+                <div class="projects__button-box">
+                    <a href="#" target="_blank" class="btn btn--project">GitHub</a>
+                </div>  
+            </div>
+
+            <div class="projects--3">
+                <h3 class="project__title">Google Clone</h3>
+                <img class="project-item center" src="img/google-clone.gif" alt="Google Clone">
+                <div class="projects__button-box">
+                    <a href="https://leecmoses.github.io/google-clone/index.html" target="_blank" class="btn btn--project">GitHub</a>
+                </div>  
+            </div>
+
+            <div class="projects__text-box center">
+                <p class="projects__description">Feedback is always appreciated. If you have questions or comments about my projects feel free to contact me. My contact information can be found below.</p>
+            </div>
+
+        </section>
+
+        <section id="skills" class="skills">
+            <h2 class="section-heading">Skills</h2>
+
+            <div class="skills__text-box center">
+                <p class="skills__description">As a developer, I am continuously honing my skills and adding new tools to my arsenal. Below are technologies that I am familiar with.</p>
+            </div>
+
+            <div class="skill-set center">
+                <a href="https://www.javascript.com/" alt="JavaScript" target="_blank"><i class="skill__icon devicon-javascript-plain"><p>JavaScript</p></i></a>
+                <a href="https://www.jQuery.com/" alt="jQuery" target="_blank"><i class="skill__icon devicon-jquery-plain-wordmark"><p>jQuery</p></i></a>
+                <a href="https://www.nodejs.org/" alt="Node.js" target="_blank"><i class="skill__icon devicon-nodejs-plain"><p>Node.js</p></i></a>
+                <a href="https://www.expressjs.com/" alt="Express" target="_blank"><i class="skill__icon devicon-express-original"><p>Express</p></i></a>
+                <a href="https://www.python.org/" alt="Python" target="_blank"><i class="skill__icon devicon-python-plain"><p>Python</p></i></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" alt="HTML5" target="_blank"><i class="skill__icon devicon-html5-plain"><p>HTML5</p></i></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3" alt="CSS3" target="_blank"><i class="skill__icon devicon-css3-plain"><p>CSS3</p></i></a>
+                <a href="https://git-scm.com/" alt="Git" target="_blank"><i class="skill__icon devicon-git-plain"><p>Git</p></i></a>
+                <a href="https://aws.amazon.com/" alt="AWS" target="_blank"><i class="skill__icon devicon-amazonwebservices-original"><p>AWS</p></i></a>
+                <a href="https://trello.com/" alt="Trello" target="_blank"><i class="skill__icon devicon-trello-plain"><p>Trello</p></i></a>
+            </div>
+
+        </section>
+
+        <footer id="contact" class="contact">
+            <h2 class="section-heading">Contact</h2>
+
+            <div class="contact__text-box">
+                <p class="contact__description">Let's get in touch.</p>
+            </div>
+                
+            <div class="contact__info center">
+                <a href="mailto:leecmoses@gmail.com"><img src="img/email.png" alt="email" class="info-icon"></a>
+                <a href="https://www.linkedin.com/in/leecmoses/" target="_blank"><img src="img/linkedin.png" alt="linkedin" class="info-icon"></a>
+                <a href="https://github.com/leecmoses" target="_blank"><img src="img/github.png" alt="github" class="info-icon"></a>
+                <a href="resume.pdf" target="_blank"><img src="img/resume.png" alt="resume" class="info-icon"></a>
+                <a href="mission.html" target="_blank"><img src="img/mission.png" alt="mission" class="info-icon"></a>
+            </div>
+
+            <p class="contact__copyright">© 2018 <span style="color:#000; font-weight: 500">leecmoses</span> All rights reserved</p>
+        </footer>
+    </main>
     <script src="js/script.js"></script>
 </body>
 </html>
