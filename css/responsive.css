@@ -1,0 +1,43 @@
+.about__button-box {
+    display: none;
+}
+
+/********************
+* MAJOR BREAKPOINTS *
+********************/
+/* TABLET */
+@media screen and (min-width: 765px) {
+
+}
+
+/********************
+* MINOR BREAKPOINTS *
+********************/
+/* MOBILE */
+@media screen and (min-width: 360px) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    .about__button-box {
+        display: block;
+        transform: translateY(2rem);
+    }
+    .skill__icon {
+        font-size: 7.5rem;
+    }
+}
+
+@media screen and (min-width: 375px) and (min-height: 670px) {
+    body {
+        font-size: 1.8rem;
+    }
+
+    .header__button-box {
+        transform: translateY(20rem);
+    }
+    
+    .about__button-box {
+        transform: translateY(8rem);
+    }
+}
