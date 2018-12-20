@@ -49,7 +49,7 @@
     }
 
     .about__info {
-        display: flex;
+        display: inline-flex;
         padding-bottom: 3rem;
     }
     
@@ -74,7 +74,46 @@
         vertical-align: top;
     }
 
-    
+    .projects {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    .projects__container {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        order: 1;
+        padding: 3rem 0 5rem;
+    }
+
+    .projects__description {
+        padding: 0;
+    }
+
+    .projects__box {
+        width: 50%;
+        padding-bottom: 1rem;
+    }
+
+    .skills {
+        height: 65vh;
+    }
+
+    .contact {
+        height: 35vh;
+    }
+
+    .info-icon {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .contact__info {
+        padding: 0 15rem;
+    }
+
+
+
 }
 
 /********************

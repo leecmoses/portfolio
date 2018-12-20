@@ -389,3 +389,8 @@ body {
     font-size: 1rem;
     color: #999;
 }
+
+.contact__copyright span {
+    color: #000;
+    font-weight: 500;
+}
