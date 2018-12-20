@@ -44,7 +44,7 @@
     }
 
     .about__box {
-        display: flex;
+        display: inline-flex;
         flex-direction: column;
     }
 
@@ -54,7 +54,6 @@
     }
     
     .about__profile {
-        content: url("../img/moses-2.jpg");
         border: none;
         border-radius: 0;
         width: 100%;
@@ -67,7 +66,6 @@
 
     .about__description {
         align-self: center;
-        display: inline-block;
         width: 35%;
         padding-right: .25rem;
         padding-bottom: 4rem;
@@ -78,6 +76,7 @@
         display: inline-flex;
         flex-wrap: wrap;
     }
+
     .projects__container {
         display: inline-flex;
         flex-direction: row;
@@ -113,6 +112,205 @@
     }
 }
 
+/* DESKTOP */
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 1.8rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .section-heading{
+        width: 100%;
+        font-size: 3.8rem;
+        padding-top: 5vh;
+        padding-bottom: 3vh;
+    }
+
+    .header__logo-box {
+        top: 5rem;
+    }
+
+    .heading-primary--main {
+        font-size: 3.8rem;
+        letter-spacing: 1.8rem;
+    }
+
+    .heading-primary--sub {
+        font-size: 1.6rem;
+    }
+
+    .header__menu-box {
+        display: none;
+    }
+    
+    .nav {
+        position: fixed;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.685);
+        transform: translate(0, 0);
+        transition: transform 0.3s ease;
+        width: 100%;
+        max-width: 100%;
+        height: 5rem;
+        margin: 0;
+    }
+
+    .nav__list {
+        display: inline-flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav__item {
+        font-weight: 700;
+        list-style-type: none;
+        box-sizing: border-box;
+        width: 10%;
+        text-align: left;
+        line-height: 2.4rem;
+        padding: 1rem 0 0;
+        text-transform: uppercase;
+    }
+    
+    .nav__item:last-child {
+        margin-right: 3rem;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .about {
+        width: 60%;
+        order: 1;
+    }
+
+    .about__figure {
+        display: inline-block;
+        width: 60%;
+        padding: 0 .25rem;
+    }
+
+    .about__box {
+        color: #333;
+        background: #eee;
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    .about__info {
+        display: inline-flex;
+        padding-bottom: 3rem;
+    }
+    
+    .about__profile {
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        box-shadow: 1rem 1rem 2rem .25rem rgba(0, 0, 0, 0.2);
+    }
+
+    .about__caption {
+        margin: 0;
+    }
+
+    .about__description {
+        color: #333;
+        align-self: center;
+        width: 35%;
+        padding-right: .25rem;
+        padding-bottom: 4rem;
+        vertical-align: top;
+    }
+    
+    .projects {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+        order: 3;
+    }
+
+    .projects__container {
+        display: inline-flex;
+        flex-wrap: wrap;
+        order: 2;
+    }
+
+    .projects__box {
+        width: 45%;
+        margin: auto;
+    }
+
+    .project__title {
+        font-size: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .project-item {
+        padding: 0;
+        box-shadow: 1rem 1rem 2rem .25rem rgba(0, 0, 0, 0.2);
+    }
+
+    .projects__button-box {
+        padding: 4rem 0 2rem;
+    }
+
+    .projects__text-box {
+        order: 1;
+    }
+
+    .skills {
+        width: 40%;
+        order: 2;
+    }
+
+    .contact {
+        display: inline-flex;
+        flex-wrap: wrap;
+        color: #333;
+        background: #eee;
+        width: 100%;
+        order: 4;
+        padding-bottom: 3rem;
+    }
+
+    .contact__description {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+        border-bottom: .2rem solid #ccc;
+    }
+
+    .contact__text-box {
+        width: 100%;
+    }
+
+    .contact__info {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem 0;
+        width: 50%;
+        order: 1;
+    }
+
+    .info-icon {
+        margin: 0 1.5rem;
+    }
+
+    .contact__copyright {
+        font-size: 1.4rem;
+        width: 50%;
+        align-self: center;
+        padding: 0;
+    }
+}
+
 /********************
 * MINOR BREAKPOINTS *
 ********************/
@@ -145,4 +343,11 @@
     .about__button-box {
         transform: translateY(8rem);
     }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+    .projects__box {
+        width: 30%;
+    }   
 }
