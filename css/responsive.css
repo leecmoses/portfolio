@@ -6,8 +6,75 @@
 * MAJOR BREAKPOINTS *
 ********************/
 /* TABLET */
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 765px) and (max-width: 1024px) {
+    body {
+        font-size: 1.8rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 
+    .section-heading{
+        width: 100%;
+        font-size: 3.8rem;
+        padding-top: 5vh;
+        padding-bottom: 3vh;
+    }
+
+    .heading-primary--main {
+        font-size: 3.8rem;
+        letter-spacing: 1.8rem;
+    }
+
+    .heading-primary--sub {
+        font-size: 1.6rem;
+    }
+
+    .header__menu-box {
+        right: 3rem;
+    }
+    
+    .nav {
+        width: 25%;
+    }
+
+    .about__figure {
+        display: inline-block;
+        width: 60%;
+        padding: 0 .25rem;
+    }
+
+    .about__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__info {
+        display: flex;
+        padding-bottom: 3rem;
+    }
+    
+    .about__profile {
+        content: url("../img/moses-2.jpg");
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        box-shadow: 1rem 1rem 2rem .25rem rgba(0, 0, 0, 0.2);
+    }
+
+    .about__caption {
+        margin: 0;
+    }
+
+    .about__description {
+        align-self: center;
+        display: inline-block;
+        width: 35%;
+        padding-right: .25rem;
+        padding-bottom: 4rem;
+        vertical-align: top;
+    }
+
+    
 }
 
 /********************
@@ -15,10 +82,6 @@
 ********************/
 /* MOBILE */
 @media screen and (min-width: 360px) {
-    body {
-        font-size: 1.6rem;
-    }
-
     .about__button-box {
         display: block;
         transform: translateY(2rem);
@@ -28,7 +91,13 @@
     }
 }
 
-@media screen and (min-width: 375px) and (min-height: 670px) {
+@media screen and (min-width: 360px) and (max-height: 669) {
+    body {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 375px) and (min-height: 670px) and (max-height: 825px) {
     body {
         font-size: 1.8rem;
     }
