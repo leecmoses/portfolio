@@ -324,6 +324,21 @@ body {
     padding-bottom: 2rem;
 }
 
+.skills__container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.skills__category {
+    padding-bottom: .75rem;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
 .skill-set {
     display: flex;
     flex-wrap: wrap;
@@ -336,7 +351,7 @@ body {
     color: #fff;
     display: inline-block;
     text-align: center;
-    font-size: 5rem;
+    font-size: 4.25rem;
     margin: 1.2rem;
 }
 
