@@ -326,11 +326,6 @@ body {
 
 .skills__container {
     width: 90%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: column;
-    justify-content: space-around;
 }
 
 .skills__category {
