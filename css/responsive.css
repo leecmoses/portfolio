@@ -266,6 +266,7 @@
     }
 
     .skills {
+        height: 100vh;
         width: 40%;
         order: 2;
     }
